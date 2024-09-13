@@ -353,9 +353,29 @@ button:active {
   align-items: center;
 } */
 
+/* Top-Orgainzer----------------------- */
 
+.Top-Orgainzer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 2rem;
+}
 
+.Top-Orgainzer-heading{
+  margin-top:0 ;
+  font-size: 24px;
+  font-family: 'Bree Serif', serif;
+  font-weight: 600;
+  color:rgb(67, 83, 3);
+  margin-left: 40px;
+}
 
+.Top-Orgainzer-sub-heading{
+  color:#938c8c;
+  margin-left:2.5rem;
+}
 
 
 

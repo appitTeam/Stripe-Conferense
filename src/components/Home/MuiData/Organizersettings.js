@@ -1,10 +1,12 @@
 // MuiData/dataSlider.js
 
-export const Venuesettings = {
+
+export const Organizersettings = {
+    
     dots: true,
     infinite: true,
     speed: 600,
-    slidesToShow:4,
+    slidesToShow:8,
     slidesToScroll: 1,
     rows: 1,
     responsive: [
