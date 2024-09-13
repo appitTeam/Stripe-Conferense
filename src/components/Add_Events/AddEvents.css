@@ -1,0 +1,243 @@
+.add-events {
+    max-width: 500px; 
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+
+div {
+    margin-bottom: 20px;
+}
+
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+
+input[type="text"],
+input[type="number"],
+input[type="time"],
+textarea {
+  width: 100%;
+  padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    /* font-size: 16px; */
+    /* margin-bottom: 10px; */
+}
+
+.MuiPopover-paper {
+    min-width: 300px; /* Adjust width as needed */
+    max-width: 100% !important; /* Ensure it does not overflow */
+}
+
+.MuiCalendarPicker-root {
+    width: 100%; /* Ensure the calendar picker takes full width */
+}
+
+.MuiDatePicker-calendarHeader {
+    text-align: center; /* Center the month and year */
+    font-weight: bold;
+    font-size: 16px; /* Adjust font size as needed */
+}
+
+.MuiDatePicker-calendarHeaderButton {
+    min-width: 80px; /* Ensure buttons have enough space */
+}
+
+
+textarea {
+    height: 150px;
+    resize: vertical; 
+}
+
+
+.time-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; 
+}
+
+
+.start-time, .end-time {
+    flex: 1; 
+}
+
+.start-time, .end-time,.open-date{
+    align-items: center;
+    text-align: center;
+    margin-bottom: -2%;
+    margin-top: -2%;
+}
+@keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+.open-date{
+    animation: blink 1.5s infinite;
+    color: red;
+    margin-top: 2%;
+
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+button .add-event-btn{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.add-event-btn:hover {
+    background-color: #0056b3;
+}
+
+
+.add-event-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+
+ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+.radio-group-row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  .MuiFormControlLabel-root {
+    margin-right: 20px; 
+  }
+  
+ 
+.keyword-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.keyword-box {
+  background-color: white;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+input {
+  width: 100%;
+}
+
+/* Style for Date Picker Container */
+.date-picker-container {
+    margin-bottom: 16px;
+  }
+  
+  .date-picker-container label {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 8px;     display: block; 
+  }
+  
+  /* Style for Date Picker Input */
+  .date-picker-container input[type="date"] {
+    width: 100%; 
+    padding: 8px;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    font-size: 16px;
+    box-sizing: border-box; 
+  }
+  
+  .date-picker-container input[type="date"]:focus {
+    border-color: #007bff; 
+    outline: none; 
+  }
+  
+  /* Progress Bar Styles */
+  
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f5f5f591;
+  z-index: 100;
+  padding: 2px 0;
+  transition: width 0.3s ease;
+
+}
+
+.progress-bar p {
+  margin: 0;
+  text-align: center;
+}
+.add-events {
+  padding: 20px;
+}
+
+
+  
+  
+@media (max-width: 600px) {
+    .radio-group-row {
+      flex-direction: column;
+    }
+  }
+
+@media (max-width: 600px) {
+    
+    .time-container {
+        flex-direction: column;
+    }
+
+    .start-time, .end-time {
+        width: 100%;
+    }
+
+    
+    form {
+        padding: 15px;
+    }
+}

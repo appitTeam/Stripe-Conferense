@@ -154,7 +154,7 @@ const Header = () => {
 
         <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
           <Link
-            to="/addevent"
+            to="/add-event-home"
             style={{
               textDecoration: "none",
               color: "#0a3d62",
